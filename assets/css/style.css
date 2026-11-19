@@ -105,12 +105,7 @@ kbd { font: .82em var(--mono); padding: .05em .4em; border-radius: 5px; border: 
 .thesis em { color: var(--accent); }
 .intro { color: var(--muted); max-width: 54ch; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.8em 0 2em; }
-.traits { margin: 0; display: grid; gap: 7px; font-size: .8rem; max-width: 520px; }
-.traits div { display: grid; grid-template-columns: 76px 1fr; gap: 14px; align-items: baseline; }
-.traits dt { color: var(--accent); }
-.traits dt::before { content: "▸ "; color: var(--faint); }
-.traits dd { margin: 0; color: var(--muted); }
-@media (max-width: 420px) { .traits div { grid-template-columns: 1fr; gap: 0; } }
+.motto { margin: 0; font-size: .85rem; color: var(--muted); max-width: 54ch; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 50%, transparent); } 70%, 100% { box-shadow: 0 0 0 7px transparent; } }
 
 .portrait { margin: 0; position: relative; justify-self: end; width: min(100%, 400px); }
