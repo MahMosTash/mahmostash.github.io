@@ -9,7 +9,7 @@
   const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const LINKS = {
     github: 'https://github.com/mahmostash',
-    linkedin: 'https://www.linkedin.com/in/mahdyar-mostashar',
+    linkedin: 'https://www.linkedin.com/in/mahdyar-mostashar-279aaa287',
     cv: 'assets/Mahdyar_Mostashar_CV.pdf',
     email: 'mailto:MahdyarMostasharH@gmail.com',
   };
@@ -25,6 +25,7 @@ Q2  Can AI help people decide better, not just predict better?
 Q3  Can a model learn markets from markets that never existed?
 Q4  What do economic shocks do to the choices families make?`,
     'now.txt': `<span class="hl">●</span> researching  synthetic pretraining for financial TS foundation models (Dr. Ali Habibnia, Virginia Tech)
+<span class="hl">●</span> researching  physics-informed GNNs for Bitcoin mining under grid constraints (Treiblmaier, Vasheghani Farahani)
 <span class="hl">●</span> shipping     Associate Data Product Manager @ Snapp!
 <span class="wm">●</span> teaching     Head TA ×3: ML, ML (practical), P&amp;S (practical)
 <span class="hl">●</span> applying     Master's programs &amp; research internships
@@ -37,7 +38,12 @@ Q4  What do economic shocks do to the choices families make?`,
 # current
 1. Can compact time-series foundation models pretrained ONLY on simulated
    processes forecast realized volatility zero-shot on real markets?
-   priors: generic | volatility-specific | regime-and-tail | mixed`,
+   priors: generic | volatility-specific | regime-and-tail | mixed
+2. Physics-informed graph learning for Bitcoin mining optimization
+   under electricity-grid constraints.
+
+# past
+- Explainable AI in finance (NTU, 2026): QLoRA fine-tuning; early stage, not completed.`,
     'teaching.log': `[Fall 26]   HEAD  Machine Learning                (Jafari Siavoshani)
 [Fall 26]   HEAD  Machine Learning, practical     (Soleymani)
 [Fall 26]   HEAD  Prob & Stats, practical         (Motahari)
@@ -50,7 +56,7 @@ Q4  What do economic shocks do to the choices families make?`,
 <span class="dim">-- 14 roles, 4 as head TA. would do it again.</span>`,
     'contact.txt': `email     <a href="${LINKS.email}">MahdyarMostasharH@gmail.com</a>
 github    <a href="${LINKS.github}" target="_blank" rel="noopener">github.com/mahmostash</a>
-linkedin  <a href="${LINKS.linkedin}" target="_blank" rel="noopener">linkedin.com/in/mahdyar-mostashar</a>`,
+linkedin  <a href="${LINKS.linkedin}" target="_blank" rel="noopener">linkedin.com/in/mahdyar-mostashar-279aaa287</a>`,
   };
   const PROJECTS = ['finformer', 'inflation-school-attendance', 'fpl-decision-model', 'ops-assistant', 'gpu-monitor', 'mips-cpu', 'neo-git', 'area-measurement-cv', 'justiceflow'];
 
@@ -61,7 +67,7 @@ linkedin  <a href="${LINKS.linkedin}" target="_blank" rel="noopener">linkedin.co
 <span class="hl">  |_|  |_|_|  |_|</span>   <span class="wm">Kernel</span>    applied ML × computational economics
                     <span class="wm">Uptime</span>    at Sharif since Sep 2023
                     <span class="wm">Shell</span>     python · pytorch · sql · c · docker
-                    <span class="wm">Processes</span> 1 research · 1 job · 5 TA roles · 1 Master's application
+                    <span class="wm">Processes</span> 2 research · 1 job · 5 TA roles · 1 Master's application
                     <span class="wm">GPA</span>       18.71 / 20  (major 19.36)
                     <span class="wm">Locale</span>    fa_IR · en_US · de_DE (beta)`;
 
