@@ -1,11 +1,25 @@
 {
-  "updated": null,
+  "updated": "2026-11-20",
   "stats": {
-    "played": null,
-    "winPct": null,
-    "currentStreak": null,
-    "maxStreak": null,
-    "distribution": []
+    "played": 71,
+    "winPct": 100,
+    "currentStreak": 69,
+    "maxStreak": 69,
+    "distribution": [
+      0,
+      2,
+      14,
+      24,
+      21,
+      10
+    ]
   },
-  "latest": null
+  "latest": {
+    "puzzle": 1980,
+    "date": "2026-11-20",
+    "solved": true,
+    "hard": false,
+    "guesses": 4,
+    "rows": []
+  }
 }

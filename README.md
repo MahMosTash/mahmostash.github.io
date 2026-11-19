@@ -35,4 +35,4 @@ and links to the NYT game. The block stays hidden until `assets/data/wordle.json
    ```
    python3 tools/wordle.py --played 212 --win 98 --streak 14 --max 41 --dist 0,6,48,92,51,11 --push
    ```
-   `--stats-only` updates the numbers without touching today's grid.
+   `--stats-only` updates the numbers without touching today's grid; `--guesses 4` records today's score without a grid.

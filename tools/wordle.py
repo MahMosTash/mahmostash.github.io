@@ -51,13 +51,19 @@ def main():
     ap.add_argument("--max", type=int, help="max streak")
     ap.add_argument("--dist", help="guess distribution for 1..6, comma-separated, e.g. 0,6,48,92,51,11")
     ap.add_argument("--stats-only", action="store_true", help="only update stats, keep today's grid")
+    ap.add_argument("--guesses", help="record today's score without a grid: 1-6, or X")
     ap.add_argument("--push", action="store_true", help="git commit + push after updating")
     a = ap.parse_args()
 
     data = json.loads(DATA.read_text()) if DATA.exists() else {"stats": {}}
     stats = data.setdefault("stats", {})
 
-    if not a.stats_only:
+    if a.guesses:
+        today = datetime.date.today()
+        g = a.guesses.upper()
+        data["latest"] = {"puzzle": (today - DAY0).days, "date": today.isoformat(), "solved": g != "X",
+                          "hard": False, "guesses": None if g == "X" else int(g), "rows": []}
+    elif not a.stats_only:
         text = a.text
         if text is None:
             text = sys.stdin.read() if not sys.stdin.isatty() else subprocess.run(["pbpaste"], capture_output=True, text=True).stdout
@@ -77,7 +83,7 @@ def main():
 
     l = data.get("latest") or {}
     if l:
-        print(f"Wordle {l['puzzle']:,} ({l['date']}): {'%d/6' % len(l['rows']) if l['solved'] else 'X/6'}")
+        print(f"Wordle {l['puzzle']:,} ({l['date']}): {'%d/6' % (l.get('guesses') or len(l['rows'])) if l['solved'] else 'X/6'}")
         for r in l["rows"]:
             print("  " + r.replace("g", "🟩").replace("y", "🟨").replace("b", "⬛"))
     print("stats:", {k: v for k, v in stats.items() if v not in (None, [])})

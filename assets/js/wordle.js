@@ -16,23 +16,36 @@
   fetch('assets/data/wordle.json', { cache: 'no-cache' })
     .then((r) => (r.ok ? r.json() : null))
     .then((data) => {
-      if (!data || !data.latest || !data.latest.rows || !data.latest.rows.length) return; // nothing real yet → stay hidden
+      const hasStats = data && data.stats && data.stats.played;
+      if (!data || (!hasStats && !data.latest)) return; // nothing real yet → stay hidden
       render(data);
       box.hidden = false;
     })
     .catch(() => {});
 
   function render({ stats = {}, latest, updated }) {
+    const today = $('wordle-title').parentElement;
+    if (!latest) { today.hidden = true; } else renderLatest(latest);
+    renderStats(stats, latest, updated);
+  }
+
+  function renderLatest(latest) {
+    const rows = latest.rows || [];
+    const guesses = latest.guesses || rows.length;
     const isToday = latest.date === todayISO();
     $('wordle-title').innerHTML =
       `<b>${isToday ? 'Today' : fmtDate(latest.date)}</b> · Wordle ${Number(latest.puzzle).toLocaleString('en-US')} · ` +
-      `<b>${latest.solved ? `${latest.rows.length}/6` : 'X/6'}</b>${latest.hard ? ' <span class="faint">(hard mode)</span>' : ''}`;
+      `<b>${latest.solved ? `${guesses}/6` : 'X/6'}</b>${latest.hard ? ' <span class="faint">(hard mode)</span>' : ''}`;
 
     const grid = $('wordle-grid');
-    grid.setAttribute('aria-label', latest.solved ? `Solved in ${latest.rows.length} guesses` : 'Not solved');
-    grid.innerHTML = latest.rows.map((row) =>
+    if (!rows.length) { grid.hidden = true; return; }
+    grid.setAttribute('aria-label', latest.solved ? `Solved in ${guesses} guesses` : 'Not solved');
+    grid.innerHTML = rows.map((row) =>
       `<div class="w-row">${[...row].map((c, i) => `<i class="w-tile ${TILE[c] || 'absent'}" style="--d:${i * 60}ms"></i>`).join('')}</div>`).join('');
 
+  }
+
+  function renderStats(stats, latest, updated) {
     const nums = [
       ['Played', stats.played],
       ['Win %', stats.winPct],
@@ -43,7 +56,7 @@
 
     const dist = Array.isArray(stats.distribution) ? stats.distribution : [];
     const max = Math.max(1, ...dist);
-    const mine = latest.solved ? latest.rows.length : -1;
+    const mine = latest && latest.solved ? (latest.guesses || (latest.rows || []).length) : -1;
     $('wordle-dist').innerHTML = dist.length
       ? dist.map((n, i) => `<div class="w-bar${i + 1 === mine ? ' me' : ''}"><span>${i + 1}</span><i style="width:${Math.max(6, (n / max) * 100)}%"><b>${n}</b></i></div>`).join('')
       : '';
