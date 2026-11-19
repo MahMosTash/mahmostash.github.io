@@ -367,7 +367,7 @@
           <div class="tabs mono" role="tablist" aria-label="Playground">
             <button role="tab" id="tab-bandit" aria-controls="panel-bandit" aria-selected="true" data-tab="bandit">incentives × bandits</button>
             <button role="tab" id="tab-market" aria-controls="panel-market" aria-selected="false" data-tab="market" tabindex="-1">synthetic markets</button>
-            <button role="tab" id="tab-clt" aria-controls="panel-clt" aria-selected="false" data-tab="clt" tabindex="-1">teaching the CLT</button>
+            <button role="tab" id="tab-crowd" aria-controls="panel-crowd" aria-selected="false" data-tab="crowd" tabindex="-1">read the crowd</button>
           </div>
 
           <!-- bandit -->
@@ -403,39 +403,37 @@
             <p class="mono readout" id="market-readout">σ²ₜ = ω_s + α·ε²ₜ₋₁ + β·σ²ₜ₋₁ &nbsp;·&nbsp; s ∈ {calm, turbulent}</p>
           </div>
 
-          <!-- CLT -->
-          <div class="panel" role="tabpanel" id="panel-clt" aria-labelledby="tab-clt" hidden>
+          <!-- crowd game -->
+          <div class="panel" role="tabpanel" id="panel-crowd" aria-labelledby="tab-crowd" hidden>
             <div class="panel-head">
               <div>
-                <h3>Average anything. Watch it turn Gaussian.</h3>
-                <p>The demo I'd use to introduce the Central Limit Theorem. Each draw averages <i>n</i> samples. The orange curve is the CLT's prediction, 𝒩(μ, σ²/n). Then try Cauchy and watch the theorem break.</p>
+                <h3>Read the crowd.</h3>
+                <p>You and 99 bots play 15 rounds in a small casino. Every payoff depends on how many <em>others</em> choose the same game,
+                  so yesterday's average is a bad guide. The bots have personalities: herders follow the crowd, contrarians avoid it,
+                  and some chase past averages. One bot models all of them. Can you beat it?</p>
+              </div>
+              <div class="scoreboard mono">
+                <div><span>round</span><b id="crowd-round">1 / 15</b></div>
+                <div><span>coins</span><b id="crowd-coins">20</b></div>
+                <div><span>rank</span><b id="crowd-rank">#1</b></div>
               </div>
             </div>
-            <div class="clt-controls mono">
-              <label>distribution
-                <select id="clt-dist">
-                  <option value="exponential">exponential(1)</option>
-                  <option value="uniform">uniform(0,1)</option>
-                  <option value="bimodal">bimodal mixture</option>
-                  <option value="die">fair die</option>
-                  <option value="coin">coin, p = 0.1</option>
-                  <option value="cauchy">cauchy (no variance)</option>
-                </select>
-              </label>
-              <label>n = <output id="clt-n-out">5</output>
-                <input type="range" id="clt-n" min="1" max="60" value="5">
-              </label>
-              <div class="btn-row">
-                <button class="btn btn-small btn-primary" id="clt-stream">▶ stream</button>
-                <button class="btn btn-small" id="clt-100">+100</button>
-                <button class="btn btn-small btn-ghost" id="clt-reset">reset</button>
+            <div class="choices" id="crowd-choices"></div>
+            <div class="crowd-bottom">
+              <div class="crowd-chart">
+                <p class="label mono">players per game, by round</p>
+                <canvas id="crowd-hist"></canvas>
+                <p class="legend mono"><span class="k-work">work</span><span class="k-jackpot">jackpot</span><span class="k-red">red</span><span class="k-blue">blue</span><span class="k-lounge">lounge</span></p>
+              </div>
+              <div class="crowd-lb">
+                <p class="label mono">leaderboard · coins <span class="faint">(groups = average)</span></p>
+                <div id="crowd-board"></div>
               </div>
             </div>
-            <div class="clt-plots">
-              <figure><canvas id="clt-src"></canvas><figcaption class="mono">population</figcaption></figure>
-              <figure><canvas id="clt-means"></canvas><figcaption class="mono">sample means</figcaption></figure>
+            <div class="panel-foot">
+              <p class="mono" id="crowd-msg"></p>
+              <button class="btn btn-small" id="crowd-reset">↻ new game</button>
             </div>
-            <p class="mono readout" id="clt-stats">&nbsp;</p>
           </div>
         </div>
       </div>
@@ -531,7 +529,7 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/market.js" defer></script>
   <script src="assets/js/bandit.js" defer></script>
-  <script src="assets/js/clt.js" defer></script>
+  <script src="assets/js/crowd.js" defer></script>
   <script src="assets/js/terminal.js" defer></script>
 </body>
 </html>

@@ -19,5 +19,5 @@ then open http://localhost:8000
 - `assets/js/main.js`: theme, nav, playground tabs, teaching heatmap data (`TA`)
 - `assets/js/market.js`: regime-switching GARCH playground + research sparklines
 - `assets/js/bandit.js`: Thompson-sampling playground
-- `assets/js/clt.js`: Central Limit Theorem playground
+- `assets/js/crowd.js`: "read the crowd" game (engine is Node-testable via require)
 - `assets/js/terminal.js`: the ` terminal (commands, files, neofetch)

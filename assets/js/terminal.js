@@ -133,7 +133,7 @@ linkedin  <a href="${LINKS.linkedin}" target="_blank" rel="noopener">linkedin.co
     vim: () => print('you are now trapped in vim. just kidding, type <span class="hl">exit</span>.', 'dim'),
     coffee: () => print('☕ brewing… this is how the TA solutions get written at 2am.', 'dim'),
     bandit: () => { window.site.selectTab('bandit'); goTo('playground'); },
-    clt: () => { window.site.selectTab('clt'); goTo('playground'); },
+    crowd: () => { window.site.selectTab('crowd'); goTo('playground'); },
     market: () => { window.site.selectTab('market'); goTo('playground'); },
     music: () => print('🎸 rock &amp; metal, loud. ask me for recommendations.', 'dim'),
     trade: () => print('been trading since high school. it\'s what got me into economics.\n<span class="dim">this is not financial advice. neither is anything else here.</span>'),
