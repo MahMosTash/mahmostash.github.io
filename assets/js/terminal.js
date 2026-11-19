@@ -25,7 +25,6 @@ Q2  Can AI help people decide better, not just predict better?
 Q3  Can a model learn markets from markets that never existed?
 Q4  What do economic shocks do to the choices families make?`,
     'now.txt': `<span class="hl">●</span> researching  synthetic pretraining for financial TS foundation models (Dr. Ali Habibnia, Virginia Tech)
-<span class="hl">●</span> researching  explainable AI in finance (Prof. Erik Cambria, NTU)
 <span class="hl">●</span> shipping     Associate Data Product Manager @ Snapp!
 <span class="wm">●</span> teaching     Head TA ×3: ML, ML (practical), P&amp;S (practical)
 <span class="hl">●</span> applying     Master's programs &amp; research internships
@@ -38,8 +37,7 @@ Q4  What do economic shocks do to the choices families make?`,
 # current
 1. Can compact time-series foundation models pretrained ONLY on simulated
    processes forecast realized volatility zero-shot on real markets?
-   priors: generic | volatility-specific | regime-and-tail | mixed
-2. Explainable AI for financial decision-support systems.`,
+   priors: generic | volatility-specific | regime-and-tail | mixed`,
     'teaching.log': `[Fall 26]   HEAD  Machine Learning                (Jafari Siavoshani)
 [Fall 26]   HEAD  Machine Learning, practical     (Soleymani)
 [Fall 26]   HEAD  Prob & Stats, practical         (Motahari)
@@ -63,7 +61,7 @@ linkedin  <a href="${LINKS.linkedin}" target="_blank" rel="noopener">linkedin.co
 <span class="hl">  |_|  |_|_|  |_|</span>   <span class="wm">Kernel</span>    applied ML × computational economics
                     <span class="wm">Uptime</span>    at Sharif since Sep 2023
                     <span class="wm">Shell</span>     python · pytorch · sql · c · docker
-                    <span class="wm">Processes</span> 2 research · 1 job · 5 TA roles · 1 Master's application
+                    <span class="wm">Processes</span> 1 research · 1 job · 5 TA roles · 1 Master's application
                     <span class="wm">GPA</span>       18.71 / 20  (major 19.36)
                     <span class="wm">Locale</span>    fa_IR · en_US · de_DE (beta)`;
 
