@@ -231,7 +231,7 @@
     msg.innerHTML = `Game over: <b>${you}</b> coins, rank <b>#${rank}</b> of ${N}. ${verdict} The lounge's hidden win rate was <b>${Math.round(g.p * 100)}%</b>.`;
   }
 
-  function reset() { g = createGame(); lastRec = null; msg.textContent = 'Pick a move. Everyone moves at the same time; payoffs depend on how many others made the same choice.'; render(); }
+  function reset() { g = createGame(); lastRec = null; msg.textContent = 'Pick a move. Everyone moves at once.'; render(); }
 
   btns.forEach((b) => b.addEventListener('click', () => choose(b.dataset.a)));
   $('crowd-reset').addEventListener('click', reset);

@@ -61,7 +61,7 @@
     agent = { a: [1, 1, 1, 1], b: [1, 1, 1, 1] };
     left = PULLS; done = false;
     cards.forEach((c) => { c.disabled = false; c.classList.remove('agent-picked'); c.querySelector('.truth').style.display = 'none'; });
-    $('b-msg').textContent = 'Click an arm to pull it. The shaded curves show what the agent currently believes about each arm (its Beta posterior).';
+    $('b-msg').textContent = 'Click an arm to pull. Shaded curves = the agent\'s current beliefs (Beta posteriors).';
     render();
   }
 

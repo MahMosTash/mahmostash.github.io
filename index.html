@@ -20,10 +20,6 @@
     })();
   </script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Web fonts load without blocking; if Google Fonts is slow or blocked, system fonts are used. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -52,26 +48,25 @@
     <!-- ───────── HERO ───────── -->
     <section class="hero container" id="top">
       <div class="hero-text">
-        <p class="eyebrow mono">~/mahdyar <span class="accent">$</span> whoami</p>
         <h1>Mahdyar Mostashar</h1>
         <p class="thesis">
           I use machine learning to understand how people make economic decisions,
-          and how the systems we build end up <em>changing</em> those decisions.
+          and how the systems we build <em>change</em> them.
         </p>
         <p class="intro">
           Final-year Computer Engineering at <strong>Sharif University of Technology</strong>, minor in <strong>Economics</strong>.
-          I work on driver incentives at <strong>Snapp!</strong>, do research on ML for finance, and head-TA machine learning and probability courses.
+          Driver incentives at <strong>Snapp!</strong>, ML-for-finance research, head TA for ML and probability.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#questions">What I'm curious about ↓</a>
           <a class="btn" href="assets/Mahdyar_Mostashar_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
           <a class="btn btn-ghost" href="#contact">Contact</a>
         </div>
-        <p class="motto mono"><span class="accent">▸</span> A builder who never stopped asking why people decide the way they do.</p>
+        <p class="motto"><span class="accent">▸</span> A builder who never stopped asking why people decide the way they do.</p>
       </div>
       <figure class="portrait">
         <img src="assets/img/mahdyar.jpg" alt="Portrait of Mahdyar Mostashar under brick arches at Sharif University" width="800" height="1000">
-        <figcaption class="mono">Tehran · Sharif University of Technology</figcaption>
+        <figcaption>Tehran · Sharif University of Technology</figcaption>
       </figure>
     </section>
 
@@ -79,46 +74,44 @@
     <section class="section" id="questions">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">01 · questions</p>
           <h2>There are people behind the data.</h2>
           <p class="sub">
-            I like questions more than answers. A better prediction or a metric moving up isn't always enough.
-            I want to understand the decisions people make, not just measure their actions.
-            These are the questions that connect most of what I do.
+            A metric going up isn't enough. I want to understand the decisions behind it.
+            These four questions connect most of what I do.
           </p>
         </header>
 
         <ol class="questions">
           <li class="q reveal">
-            <span class="q-n mono">Q1</span>
+            <span class="q-n">Q1</span>
             <div>
               <h3>When a system makes decisions, how do people respond?</h3>
-              <p>An incentive can get a driver to complete more rides today. But is it improving their experience, or just encouraging short-term behavior that won't last? I care about what happens <em>after</em> the metric moves.</p>
-              <p class="q-links mono"><a href="#work">→ incentive work at Snapp</a> <a href="#playground" data-tab="bandit">→ play the bandit</a></p>
+              <p>An incentive can get a driver to do more rides today. Does it help them, or just buy short-term behavior? I care what happens <em>after</em> the metric moves.</p>
+              <p class="q-links"><a href="#work">→ incentive work at Snapp</a> <a href="#playground" data-tab="bandit">→ play the bandit</a></p>
             </div>
           </li>
           <li class="q reveal">
-            <span class="q-n mono">Q2</span>
+            <span class="q-n">Q2</span>
             <div>
               <h3>Can AI help people decide better, not just predict better?</h3>
-              <p>AI tools are usually judged by accuracy. The real test is whether the person using them makes a better call. That's the goal of my next Driver Voice layer: not just flagging a problem, but helping a team decide what to fix.</p>
-              <p class="q-links mono"><a href="#projects">→ Driver Voice, layer 2</a></p>
+              <p>AI is judged by accuracy. The real test is whether people make better calls with it. Next for Driver Voice: from flagging problems to helping teams decide what to fix.</p>
+              <p class="q-links"><a href="#projects">→ Driver Voice, layer 2</a></p>
             </div>
           </li>
           <li class="q reveal">
-            <span class="q-n mono">Q3</span>
+            <span class="q-n">Q3</span>
             <div>
               <h3>Can a model learn markets from markets that never existed?</h3>
-              <p>Financial data is short, noisy, and keeps changing. If we pretrain only on simulated processes, which kinds of synthetic "economies" teach a model something real?</p>
-              <p class="q-links mono"><a href="#research">→ synthetic pre-training</a> <a href="#playground" data-tab="market">→ generate a fake market</a></p>
+              <p>Financial data is short, noisy, and keeps shifting. If we pretrain only on simulated markets, which synthetic worlds teach something real?</p>
+              <p class="q-links"><a href="#research">→ synthetic pre-training</a> <a href="#playground" data-tab="market">→ generate a fake market</a></p>
             </div>
           </li>
           <li class="q reveal">
-            <span class="q-n mono">Q4</span>
+            <span class="q-n">Q4</span>
             <div>
               <h3>What do economic shocks do to the choices families make?</h3>
-              <p>Inflation shows up in prices, but also in decisions like whether a child stays in school. I like using data to trace macro shocks down to individual behavior.</p>
-              <p class="q-links mono"><a href="#research">→ inflation &amp; school attendance</a></p>
+              <p>Inflation shows up in prices, and in whether a child stays in school. I trace macro shocks down to individual choices.</p>
+              <p class="q-links"><a href="#research">→ inflation &amp; school attendance</a></p>
             </div>
           </li>
         </ol>
@@ -129,23 +122,22 @@
     <section class="section" id="research">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">02 · research</p>
           <h2>Research</h2>
           <p class="sub">Applied machine learning · data-driven decision making · computational economics</p>
         </header>
 
         <div class="entries">
           <article class="entry reveal">
-            <div class="entry-side mono">
+            <div class="entry-side">
               <span>Aug 2026 – now</span>
               <span class="faint">with Dr. Ali Habibnia<br>Virginia Tech</span>
             </div>
             <div class="entry-main">
               <h3>Synthetic pre-training for financial time-series foundation models</h3>
               <p>
-                Can compact time-series foundation models pretrained <strong>entirely on simulated processes</strong> transfer
-                <strong>zero-shot</strong> to realized-volatility forecasting on unseen financial data? I'm designing a controlled study
-                that compares four families of synthetic priors under a fixed architecture and compute budget.
+                Can compact time-series foundation models, pretrained <strong>only on simulated processes</strong>, forecast
+                realized volatility <strong>zero-shot</strong> on real data? A controlled study of four synthetic-prior families
+                under fixed architecture and compute.
               </p>
               <div class="pipeline" aria-label="Study design">
                 <div class="pipe-col">
@@ -155,24 +147,24 @@
                   <div class="prior"><svg class="spark" data-kind="mixed" viewBox="0 0 100 24" preserveAspectRatio="none"></svg><span class="mono">mixed</span></div>
                 </div>
                 <div class="pipe-arrow mono" aria-hidden="true">→</div>
-                <div class="pipe-box mono">compact TSFM<span class="faint">fixed arch &amp; compute</span></div>
+                <div class="pipe-box">compact TSFM<span class="faint">fixed arch &amp; compute</span></div>
                 <div class="pipe-arrow mono" aria-hidden="true">→<small>zero-shot</small></div>
                 <div class="pipe-box pipe-target mono">realized volatility<span class="faint">unseen real markets</span></div>
               </div>
-              <p class="note mono">sparklines are freshly simulated from each prior family · click one to resample</p>
+              <p class="note">Live samples from each prior; click to resample.</p>
             </div>
           </article>
 
           <article class="entry reveal">
-            <div class="entry-side mono">
+            <div class="entry-side">
               <span>empirical economics</span>
               <a href="https://github.com/MahMosTash/Iran-Inflation-School-Attendance" target="_blank" rel="noopener">code ↗</a>
             </div>
             <div class="entry-main">
               <h3>Inflation and school non-attendance in Iran</h3>
               <p>
-                A reproducible econometric pipeline linking <strong>190,933 child records</strong> to <strong>3,348 province-month</strong>
-                inflation observations. Survey-weighted fixed-effects models with clustered errors and robustness checks.
+                <strong>190,933 child records</strong> linked to <strong>3,348 province-month</strong> inflation observations.
+                Survey-weighted fixed effects, clustered errors, robustness checks. Fully reproducible.
               </p>
             </div>
           </article>
@@ -184,36 +176,35 @@
     <section class="section" id="work">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">03 · industry</p>
           <h2>Where the questions come from</h2>
-          <p class="sub">Most of my research questions started as something I noticed at work.</p>
+          <p class="sub">Most of my research questions started at work.</p>
         </header>
 
         <div class="entries">
           <article class="entry reveal">
-            <div class="entry-side mono">
+            <div class="entry-side">
               <span>Sep 2025 – now</span>
               <span class="faint">Snapp!<br>Iran's largest ride-hailing platform</span>
             </div>
             <div class="entry-main">
               <h3>Associate Data Product Manager</h3>
               <ul class="bullets">
-                <li><strong>Personalized incentives:</strong> a contextual multi-armed-bandit initiative for driver incentives and goal-setting, balancing exploration and exploitation over behavioral, activity, and temporal features.</li>
-                <li><strong>Incentive fatigue:</strong> found signs that overly aggressive incentives drive burnout and unstable engagement, and defined metrics for incentive dependency, earnings predictability, target attainment, and post-incentive activity.</li>
-                <li><strong>Driver Voice:</strong> a pipeline that merges Telegram, call-center, support-ticket, and bug-report data, uses text classification and topic/sentiment analysis to surface recurring issues, and routes them to the right teams.</li>
-                <li><strong>Notification forensics:</strong> reverse-engineered driver notification flows in SQL to validate delivery and separate automated from manual incentive messages.</li>
+                <li><strong>Personalized incentives:</strong> contextual bandits for driver incentives and goal-setting.</li>
+                <li><strong>Incentive fatigue:</strong> showed aggressive incentives can drive burnout; defined metrics for dependency, earnings predictability, and post-incentive activity.</li>
+                <li><strong>Driver Voice:</strong> merges Telegram, call-center, ticket, and bug-report data; classifies recurring issues and routes them to the right team.</li>
+                <li><strong>Notification forensics:</strong> traced notification flows in SQL to separate automated from manual incentive messages.</li>
               </ul>
             </div>
           </article>
 
           <article class="entry reveal">
-            <div class="entry-side mono">
+            <div class="entry-side">
               <span>Dec 2024 – Apr 2025</span>
               <span class="faint">Divar<br>Iran's largest classifieds platform</span>
             </div>
             <div class="entry-main">
               <h3>Junior Software Engineer</h3>
-              <p>Built an HR assistant on OpenAI models that answers most employee questions automatically, cutting response times and HR workload.</p>
+              <p>Built an LLM-based HR assistant that answers most employee questions automatically.</p>
             </div>
           </article>
         </div>
@@ -224,7 +215,6 @@
     <section class="section" id="teaching">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">04 · teaching</p>
           <h2>The part I'd do for free</h2>
         </header>
 
@@ -232,38 +222,33 @@
           <div class="prose reveal">
             <blockquote class="story">
               <p>
-                One semester, students told us the practical homework wasn't interesting enough. Instead of patching it,
-                I sat down and designed a <strong>completely new project</strong> where students <strong>competed against each other</strong>.
+                Students told us the practical homework wasn't interesting. So I designed a new project from scratch,
+                where they <strong>compete against each other</strong>.
               </p>
             </blockquote>
             <p>
-              I care a lot about students being genuinely interested in what they learn. Interest is what keeps me learning,
-              so I try to build it on purpose: assignments that look like real problems, a bit of competition,
-              and simulations where the wrong intuition fails loudly.
-            </p>
-            <p>
-              As head TA I spend as much time on the system around the course as on the content: problem sets that teach
-              instead of filter, and a TA team that treats office hours as the most important hour of the week.
+              Curiosity is what keeps me learning, so I design for it: real data, real stakes, a leaderboard,
+              and problems where the wrong intuition fails loudly.
             </p>
             <div class="stats">
-              <div class="stat"><b>14</b><span class="mono">TA roles</span></div>
-              <div class="stat"><b>4</b><span class="mono">as head TA</span></div>
-              <div class="stat"><b>6</b><span class="mono">courses</span></div>
-              <div class="stat"><b>2</b><span class="mono">universities</span></div>
+              <div class="stat"><b>14</b><span>TA roles</span></div>
+              <div class="stat"><b>4</b><span>as head TA</span></div>
+              <div class="stat"><b>6</b><span>courses</span></div>
+              <div class="stat"><b>2</b><span>universities</span></div>
             </div>
           </div>
 
           <div class="heat-wrap reveal">
-            <p class="label mono">roles by course × semester</p>
+            <p class="label">Roles by course and semester</p>
             <div class="heatmap" id="heatmap" role="table" aria-label="Teaching assistant roles by course and semester"></div>
-            <div class="legend mono">
+            <div class="legend">
               <span><i class="sw sw-ta"></i>TA</span>
               <span><i class="sw sw-head"></i>head TA</span>
             </div>
-            <p class="heat-tip mono" id="heat-tip">hover a cell for details</p>
+            <p class="heat-tip" id="heat-tip">Hover a cell for details.</p>
             <details class="ta-log">
-              <summary class="mono">full list</summary>
-              <ul class="mono">
+              <summary>Full list</summary>
+              <ul>
                 <li><b>Fall 26</b> Head TA · Machine Learning · Dr. Mahdi Jafari Siavoshani</li>
                 <li><b>Fall 26</b> Head TA · Machine Learning (Practical) · Dr. Mahdieh Soleymani</li>
                 <li><b>Fall 26</b> Head TA · Probability &amp; Statistics (Practical) · Dr. Abolfazl Motahari</li>
@@ -282,6 +267,22 @@
             </details>
           </div>
         </div>
+
+        <div class="designed reveal">
+          <p class="label">Designed for my students</p>
+          <div class="designed-grid">
+            <article>
+              <p class="d-meta">Machine Learning (Practical) · Fall 2026</p>
+              <h3>Divar price prediction</h3>
+              <p>Predict real apartment prices from Divar listings. Train on 2024, test on today, so inflation matters. One self-built network or tree, no boosting. Ranked on a hidden leaderboard.</p>
+            </article>
+            <article>
+              <p class="d-meta">Probability &amp; Statistics · Fall 2026 · in design</p>
+              <h3>The probabilistic casino</h3>
+              <p>120 agents, hidden payoff distributions. Estimate them from history, then build an agent that also predicts the crowd. It inspired <a href="#playground" data-tab="crowd">read the crowd</a>.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -289,61 +290,56 @@
     <section class="section" id="projects">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">05 · projects</p>
           <h2>Things I build</h2>
-          <p class="sub">I build on reflex. If something is repetitive or bugging me, it usually turns into a project.</p>
+          <p class="sub">If something is repetitive or bugging me, it becomes a project.</p>
         </header>
 
         <div class="workbench reveal">
-          <p class="label mono">on the workbench</p>
+          <p class="label">On the workbench</p>
           <ul>
             <li>
               <span class="pill pill-live mono">designing</span>
-              <div><strong>Driver Voice, layer 2.</strong> Right now the pipeline detects recurring driver issues. The next layer traces <em>where</em> each issue comes from and suggests possible fixes, so teams get a diagnosis instead of just an alert.</div>
-            </li>
-            <li>
-              <span class="pill pill-ok mono">running</span>
-              <div><strong>My personal AI assistant.</strong> An always-on Telegram agent over my Gmail and calendars that I keep extending as my life gets busier.</div>
+              <div><strong>Driver Voice, layer 2.</strong> From detecting recurring driver issues to tracing their cause and suggesting fixes.</div>
             </li>
           </ul>
         </div>
 
         <div class="projects">
           <a class="project reveal" href="https://github.com/MahMosTash/FinFormer-Custom-Transformer-for-Financial-Sentiment" target="_blank" rel="noopener">
-            <span class="p-kind mono">nlp · finance</span>
+            <span class="p-kind">nlp · finance</span>
             <h3>FinFormer <span class="arrow">↗</span></h3>
-            <p>Transformer components from scratch, plus fine-tuned FinBERT, for sentiment on earnings calls and financial news.</p>
-            <span class="p-tech mono">PyTorch · HF Transformers</span>
+            <p>Transformer built from scratch, plus fine-tuned FinBERT, for sentiment on earnings calls and financial news.</p>
+            <span class="p-tech">PyTorch · HF Transformers</span>
           </a>
           <div class="project reveal">
-            <span class="p-kind mono">decision model · private</span>
+            <span class="p-kind">decision model · private</span>
             <h3>FPL Decision Model</h3>
-            <p>A long-time Fantasy Premier League habit turned into a model for squad selection, transfers, lineups, and captaincy, using fixtures, form, and head-to-head history.</p>
-            <span class="p-tech mono">Python · optimization</span>
+            <p>Picks my Fantasy Premier League squad, transfers, lineup, and captain from fixtures, form, and head-to-head history.</p>
+            <span class="p-tech">Python · optimization</span>
           </div>
           <div class="project reveal">
-            <span class="p-kind mono">agent · private</span>
+            <span class="p-kind">agent · private</span>
             <h3>Personal Operations Assistant</h3>
-            <p>Privacy-scoped Telegram assistant over Gmail and calendars: briefings, reminders, conflict detection, and confirmation-gated event creation.</p>
-            <span class="p-tech mono">LLMs · Docker · Telegram</span>
+            <p>Always-on Telegram assistant over my email and calendars: briefings, reminders, conflict detection, confirmation-gated events.</p>
+            <span class="p-tech">LLMs · Docker · Telegram</span>
           </div>
           <a class="project reveal" href="https://github.com/MahMosTash/CA-Project-GPU-Monitor" target="_blank" rel="noopener">
-            <span class="p-kind mono">infra</span>
+            <span class="p-kind">infra</span>
             <h3>GPU Resource Monitor <span class="arrow">↗</span></h3>
-            <p>Monitoring for shared GPUs with API, web, desktop, and terminal interfaces, plus alerting and email notifications.</p>
-            <span class="p-tech mono">FastAPI · Prometheus · Grafana</span>
+            <p>Monitoring and alerts for shared GPUs, with API, web, desktop, and terminal clients.</p>
+            <span class="p-tech">FastAPI · Prometheus · Grafana</span>
           </a>
           <a class="project reveal" href="https://github.com/MahMosTash/MIPS-CPU-Design" target="_blank" rel="noopener">
-            <span class="p-kind mono">hardware</span>
+            <span class="p-kind">hardware</span>
             <h3>MIPS CPU <span class="arrow">↗</span></h3>
-            <p>Single-cycle and pipelined MIPS-compatible CPUs with data forwarding and hazard handling.</p>
-            <span class="p-tech mono">Verilog · Logisim</span>
+            <p>Single-cycle and pipelined MIPS CPUs with forwarding and hazard handling.</p>
+            <span class="p-tech">Verilog · Logisim</span>
           </a>
           <a class="project reveal" href="https://github.com/MahMosTash/BP_Project" target="_blank" rel="noopener">
-            <span class="p-kind mono">systems</span>
+            <span class="p-kind">systems</span>
             <h3>Neo Git <span class="arrow">↗</span></h3>
-            <p>A Git-like version-control system in C: init, file tracking, commits, and basic branching.</p>
-            <span class="p-tech mono">C · Linux</span>
+            <p>Git-like version control in C: init, tracking, commits, branches.</p>
+            <span class="p-tech">C · Linux</span>
           </a>
         </div>
         <p class="more mono reveal">
@@ -358,16 +354,15 @@
     <section class="section" id="playground">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">06 · playground</p>
           <h2>Ideas you can poke at</h2>
-          <p class="sub">Three small interactive versions of things I think about. Everything runs in your browser.</p>
+          <p class="sub">Small, playable versions of things I think about. All in your browser.</p>
         </header>
 
         <div class="pg reveal">
-          <div class="tabs mono" role="tablist" aria-label="Playground">
-            <button role="tab" id="tab-bandit" aria-controls="panel-bandit" aria-selected="true" data-tab="bandit">incentives × bandits</button>
-            <button role="tab" id="tab-market" aria-controls="panel-market" aria-selected="false" data-tab="market" tabindex="-1">synthetic markets</button>
-            <button role="tab" id="tab-crowd" aria-controls="panel-crowd" aria-selected="false" data-tab="crowd" tabindex="-1">read the crowd</button>
+          <div class="tabs" role="tablist" aria-label="Playground">
+            <button role="tab" id="tab-bandit" aria-controls="panel-bandit" aria-selected="true" data-tab="bandit">Incentives &amp; bandits</button>
+            <button role="tab" id="tab-market" aria-controls="panel-market" aria-selected="false" data-tab="market" tabindex="-1">Synthetic markets</button>
+            <button role="tab" id="tab-crowd" aria-controls="panel-crowd" aria-selected="false" data-tab="crowd" tabindex="-1">Read the crowd</button>
           </div>
 
           <!-- bandit -->
@@ -375,7 +370,7 @@
             <div class="panel-head">
               <div>
                 <h3>Can you beat a Thompson-sampling agent?</h3>
-                <p>Four hypothetical incentive designs, each with a hidden success rate. You get 30 pulls, the agent gets 30 on the same arms, and you both start knowing nothing.</p>
+                <p>Four hypothetical incentives with hidden success rates. 30 pulls each, and you both start knowing nothing.</p>
               </div>
               <div class="scoreboard mono">
                 <div><span>left</span><b id="b-left">30</b></div>
@@ -395,7 +390,7 @@
             <div class="panel-head">
               <div>
                 <h3>A market that never existed</h3>
-                <p>22 price paths from a two-regime Markov-switching GARCH(1,1), the kind of synthetic process I study for pretraining. <span class="c-calm">Calm</span> and <span class="c-turb">turbulent</span> regimes switch at random, and volatility clusters. Hover to inspect.</p>
+                <p>22 paths from a two-regime Markov-switching GARCH(1,1), the kind of process I pretrain on. <span class="c-calm">Calm</span> and <span class="c-turb">turbulent</span> regimes switch at random. Hover to inspect.</p>
               </div>
               <button class="btn btn-small" id="market-reseed">↻ new market</button>
             </div>
@@ -408,9 +403,8 @@
             <div class="panel-head">
               <div>
                 <h3>Read the crowd.</h3>
-                <p>You and 99 bots play 15 rounds in a small casino. Every payoff depends on how many <em>others</em> choose the same game,
-                  so yesterday's average is a bad guide. The bots have personalities: herders follow the crowd, contrarians avoid it,
-                  and some chase past averages. One bot models all of them. Can you beat it?</p>
+                <p>You vs. 99 bots, 15 rounds. Payoffs depend on how many <em>others</em> pick the same game, so past averages mislead.
+                  Herders follow the crowd, contrarians avoid it, and one bot models them all. Beat it.</p>
               </div>
               <div class="scoreboard mono">
                 <div><span>round</span><b id="crowd-round">1 / 15</b></div>
@@ -421,12 +415,12 @@
             <div class="choices" id="crowd-choices"></div>
             <div class="crowd-bottom">
               <div class="crowd-chart">
-                <p class="label mono">players per game, by round</p>
+                <p class="label">Players per game, by round</p>
                 <canvas id="crowd-hist"></canvas>
-                <p class="legend mono"><span class="k-work">work</span><span class="k-jackpot">jackpot</span><span class="k-red">red</span><span class="k-blue">blue</span><span class="k-lounge">lounge</span></p>
+                <p class="legend"><span class="k-work">work</span><span class="k-jackpot">jackpot</span><span class="k-red">red</span><span class="k-blue">blue</span><span class="k-lounge">lounge</span></p>
               </div>
               <div class="crowd-lb">
-                <p class="label mono">leaderboard · coins <span class="faint">(groups = average)</span></p>
+                <p class="label">Leaderboard <span class="faint">(coins; groups show their average)</span></p>
                 <div id="crowd-board"></div>
               </div>
             </div>
@@ -443,41 +437,38 @@
     <section class="section" id="about">
       <div class="container">
         <header class="section-head reveal">
-          <p class="label mono">07 · about</p>
           <h2>A bit more about me</h2>
         </header>
         <div class="about-grid">
           <div class="prose reveal">
             <p>
-              I've been into <strong>trading since high school</strong>. Trying to understand why prices move is what first got me
-              reading economics, and eventually led to my Economics minor. Over time the question shifted from the market
-              to the <strong>people in it</strong>: why they decide the way they do, and what changes their minds.
+              <strong>Trading since high school</strong> got me into economics. Over time my question moved from the market
+              to the <strong>people in it</strong>: why they decide the way they do.
             </p>
             <p>
-              I never wanted to learn something just to pass an exam. I want to see what I can actually do with it.
-              That's why I keep one foot in research, one in industry, and both in the classroom.
+              I don't learn things to pass exams; I learn them to use them. So I keep one foot in research,
+              one in industry, and both in the classroom.
             </p>
             <p>
-              Off the clock: <strong>rock and metal</strong>, loud. Football, and therefore Fantasy Premier League,
-              and therefore a decision model. And slowly learning German.
+              Off the clock: <strong>rock and metal</strong>, football (hence the FPL model), and slowly, German.
             </p>
           </div>
           <div class="facts reveal">
             <div>
-              <p class="label mono">education</p>
+              <p class="label">Education</p>
               <p><strong>B.Sc. Computer Engineering</strong>, Sharif University of Technology <span class="faint">· 2023–</span><br>
                  Minor in Economics <span class="faint">· GPA 18.71/20, major 19.36/20</span></p>
             </div>
             <div>
-              <p class="label mono">community</p>
+              <p class="label">Community</p>
               <p>Vice President, Winter Seminar Series 2026 · Central Council, Students' Scientific Chapter · Head of Executive &amp; HR, Rayan AI Contest · Deputy Head of Media, ICPC Asia Tehran 2023</p>
             </div>
             <div>
-              <p class="label mono">honors</p>
+              <p class="label">Honors</p>
               <p>Ranked 120 of 144,000+ in Iran's national university entrance exam (top 0.09%) · Top 30, International Kangaroo Math Contest</p>
             </div>
             <div>
-              <p class="label mono">languages</p>
+              <p class="label">Languages</p>
               <p>Persian (native) · English (professional) · German (elementary)</p>
             </div>
           </div>
@@ -490,8 +481,8 @@
       <div class="container contact reveal">
         <h2>Let's talk.</h2>
         <p>
-          I'm applying to <strong>Master's programs</strong> and looking for <strong>research internships</strong>.
-          I love talking with people, so if you think about incentives, human–AI decision making, or ML for economics, I'd like to hear from you.
+          Applying to <strong>Master's programs</strong> and <strong>research internships</strong>.
+          If you work on incentives, human–AI decisions, or ML for economics, I'd love to talk.
         </p>
         <div class="contact-links">
           <button class="btn btn-primary" id="copy-email" data-email="MahdyarMostasharH@gmail.com">✉ Copy email</button>
@@ -503,7 +494,7 @@
     </section>
   </main>
 
-  <footer class="footer mono">
+  <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="year">2026</span> Mahdyar Mostashar</span>
       <span class="faint">hand-written, no frameworks · press <kbd>`</kbd> for a terminal</span>
@@ -524,7 +515,7 @@
     </form>
   </dialog>
 
-  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/market.js" defer></script>
