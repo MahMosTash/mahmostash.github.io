@@ -21,3 +21,18 @@ then open http://localhost:8000
 - `assets/js/bandit.js`: Thompson-sampling playground
 - `assets/js/crowd.js`: "read the crowd" game (engine is Node-testable via require)
 - `assets/js/terminal.js`: the ` terminal (commands, files, neofetch)
+
+## Updating my Wordle results
+Wordle is a game by The New York Times; the site only shows my own results (no letters, no spoilers)
+and links to the NYT game. The block stays hidden until `assets/data/wordle.json` has data.
+
+1. Play on nytimes.com/games/wordle, then tap **Share** (copies the result).
+2. Run, from this folder:
+   ```
+   python3 tools/wordle.py --push
+   ```
+   Add stats from the NYT Statistics screen whenever you like:
+   ```
+   python3 tools/wordle.py --played 212 --win 98 --streak 14 --max 41 --dist 0,6,48,92,51,11 --push
+   ```
+   `--stats-only` updates the numbers without touching today's grid.

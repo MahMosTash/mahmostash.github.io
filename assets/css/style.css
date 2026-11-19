@@ -396,3 +396,31 @@ a.project:hover .arrow { color: var(--accent); transform: translate(2px, -2px); 
 /* avoid one-word last lines */
 p, h1, h2, h3, li { text-wrap: pretty; }
 .thesis, .motto, h2 { text-wrap: balance; }
+
+/* ───────── wordle (my NYT results) ───────── */
+.wordle { margin-top: 56px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.wordle-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.wordle-head h3 { margin: 0; font-size: 1.3rem; }
+.wordle-body { display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: start; }
+@media (max-width: 640px) { .wordle-body { grid-template-columns: 1fr; gap: 24px; } }
+.wordle-today { margin: 0; }
+.wordle-today figcaption { font-size: .9rem; color: var(--muted); margin-bottom: 10px; }
+.wordle-grid { display: grid; gap: 5px; }
+.w-row { display: flex; gap: 5px; }
+.w-tile { width: 30px; height: 30px; border-radius: 3px; display: block; animation: wflip .45s ease both; animation-delay: var(--d); }
+.w-tile.correct { background: #3f9a5b; }
+.w-tile.present { background: #c9a227; }
+.w-tile.absent { background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
+@keyframes wflip { from { transform: rotateX(90deg); } to { transform: none; } }
+.wordle-nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 0 0 18px; }
+.wordle-nums div { text-align: center; }
+.wordle-nums dd { margin: 0; font-size: 1.7rem; font-weight: 700; line-height: 1.1; }
+.wordle-nums dt { font: .72rem var(--sans); color: var(--faint); }
+.wordle-dist { display: grid; gap: 4px; }
+.w-bar { display: grid; grid-template-columns: 14px 1fr; gap: 8px; align-items: center; font: .78rem var(--sans); color: var(--muted); }
+.w-bar i { display: flex; justify-content: flex-end; padding: 1px 6px; background: var(--surface-2); border-radius: 2px; font-style: normal; }
+.w-bar b { font-weight: 600; color: var(--text); }
+.w-bar.me i { background: #3f9a5b; }
+.w-bar.me b { color: #fff; }
+.wordle-credit { margin: 20px 0 0; font-size: .82rem; color: var(--faint); }
+.wordle-credit a { color: var(--muted); }

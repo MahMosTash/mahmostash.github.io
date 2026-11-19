@@ -504,6 +504,30 @@
             </div>
           </div>
         </div>
+
+        <!-- Wordle: filled from assets/data/wordle.json; stays hidden until there is real data -->
+        <div class="wordle reveal" id="wordle" hidden>
+          <div class="wordle-head">
+            <h3>My Wordle</h3>
+            <a class="btn btn-small" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">Play Wordle on The New York Times ↗</a>
+          </div>
+          <div class="wordle-body">
+            <figure class="wordle-today">
+              <figcaption id="wordle-title"></figcaption>
+              <div class="wordle-grid" id="wordle-grid" role="img"></div>
+            </figure>
+            <div class="wordle-stats">
+              <dl class="wordle-nums" id="wordle-nums"></dl>
+              <p class="label">Guess distribution</p>
+              <div class="wordle-dist" id="wordle-dist"></div>
+            </div>
+          </div>
+          <p class="wordle-credit">
+            Wordle is a game by <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">The New York Times</a>.
+            These are my own results from the NYT game, shown here with no letters so nothing is spoiled.
+            <span id="wordle-updated"></span>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -553,5 +577,6 @@
   <script src="assets/js/bandit.js" defer></script>
   <script src="assets/js/crowd.js" defer></script>
   <script src="assets/js/terminal.js" defer></script>
+  <script src="assets/js/wordle.js" defer></script>
 </body>
 </html>
