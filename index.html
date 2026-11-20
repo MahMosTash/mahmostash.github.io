@@ -19,7 +19,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611201519">
+  <link rel="stylesheet" href="assets/css/style.css?v=202611201515">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -56,16 +56,16 @@
           and how the systems we build <em>change</em> them.
         </p>
         <p class="intro">
-          Final-year Computer Engineering at Sharif University of Technology, minor in Economics.
-          Driver incentives at Snapp!, ML-for-finance research, head TA for ML and probability.
+          Final-year Computer Engineering at <strong>Sharif University of Technology</strong>, minor in <strong>Economics</strong>.
+          Driver incentives at <strong>Snapp!</strong>, ML-for-finance research, head TA for ML and probability.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#questions">Research questions</a>
-          <a class="btn" href="assets/Mahdyar_Mostashar_CV.pdf" target="_blank" rel="noopener">CV</a>
-          <a class="btn" href="https://github.com/mahmostash" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/mahdyar-mostashar-279aaa287" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary" href="#questions">What I'm curious about ↓</a>
+          <a class="btn" href="assets/Mahdyar_Mostashar_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+          <a class="btn" href="https://github.com/mahmostash" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/mahdyar-mostashar-279aaa287" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
-        <p class="motto">A builder who never stopped asking why people decide the way they do.</p>
+        <p class="motto"><span class="accent">▸</span> A builder who never stopped asking why people decide the way they do.</p>
       </div>
       <figure class="portrait">
         <img src="assets/img/mahdyar.jpg" alt="Portrait of Mahdyar Mostashar under brick arches at Sharif University" width="800" height="1000">
@@ -84,26 +84,38 @@
           </p>
         </header>
 
-        <ol class="qlist">
-          <li class="reveal">
-            <h3>When a system makes decisions, how do people respond?</h3>
-            <p>An incentive can get a driver to do more rides today. Does it help them, or just buy short-term behavior? I care what happens after the metric moves.
-              Related: <a href="#work">my incentive work at Snapp</a> and <a href="#playground" data-tab="bandit">the bandit demo</a>.</p>
+        <ol class="questions">
+          <li class="q reveal">
+            <span class="q-n">Q1</span>
+            <div>
+              <h3>When a system makes decisions, how do people respond?</h3>
+              <p>An incentive can get a driver to do more rides today. Does it help them, or just buy short-term behavior? I care what happens <em>after</em> the metric moves.</p>
+              <p class="q-links"><a href="#work">→ incentive work at Snapp</a> <a href="#playground" data-tab="bandit">→ play the bandit</a></p>
+            </div>
           </li>
-          <li class="reveal">
-            <h3>Can AI help people decide better, not just predict better?</h3>
-            <p>AI is judged by accuracy. The real test is whether people make better calls with it.
-              Related: <a href="#research">explainable AI in finance</a> and <a href="#projects">the next version of Driver Voice</a>.</p>
+          <li class="q reveal">
+            <span class="q-n">Q2</span>
+            <div>
+              <h3>Can AI help people decide better, not just predict better?</h3>
+              <p>AI is judged by accuracy. The real test is whether people make better calls with it. Next for Driver Voice: from flagging problems to helping teams decide what to fix.</p>
+              <p class="q-links"><a href="#research">→ explainable AI in finance</a> <a href="#projects">→ Driver Voice, layer 2</a></p>
+            </div>
           </li>
-          <li class="reveal">
-            <h3>Can a model learn markets from markets that never existed?</h3>
-            <p>Financial data is short, noisy, and keeps shifting. If we pretrain only on simulated markets, which synthetic worlds teach something real?
-              Related: <a href="#research">synthetic pre-training</a> and <a href="#playground" data-tab="market">a simulated market you can play with</a>.</p>
+          <li class="q reveal">
+            <span class="q-n">Q3</span>
+            <div>
+              <h3>Can a model learn markets from markets that never existed?</h3>
+              <p>Financial data is short, noisy, and keeps shifting. If we pretrain only on simulated markets, which synthetic worlds teach something real?</p>
+              <p class="q-links"><a href="#research">→ synthetic pre-training</a> <a href="#playground" data-tab="market">→ generate a fake market</a></p>
+            </div>
           </li>
-          <li class="reveal">
-            <h3>What do economic shocks do to the choices families make?</h3>
-            <p>Inflation shows up in prices, and in whether a child stays in school. I trace macro shocks down to individual choices.
-              Related: <a href="#research">inflation and school attendance</a>.</p>
+          <li class="q reveal">
+            <span class="q-n">Q4</span>
+            <div>
+              <h3>What do economic shocks do to the choices families make?</h3>
+              <p>Inflation shows up in prices, and in whether a child stays in school. I trace macro shocks down to individual choices.</p>
+              <p class="q-links"><a href="#research">→ inflation &amp; school attendance</a></p>
+            </div>
           </li>
         </ol>
       </div>
@@ -126,7 +138,7 @@
             <div class="entry-main">
               <h3>Synthetic pre-training for financial time-series foundation models</h3>
               <p>
-                Zero-shot volatility forecasting with time-series foundation models pretrained only on synthetic data.
+                Zero-shot volatility forecasting with time-series foundation models pretrained <strong>only on synthetic data</strong>.
                 I compare synthetic-data priors under fixed model architectures and compute budgets.
               </p>
               <div class="pipeline" aria-label="Study design">
@@ -154,7 +166,7 @@
               <h3>Physics-informed graph learning for Bitcoin mining optimization</h3>
               <p>
                 A physics-informed GNN that decides where to place Bitcoin miners, how much capacity to build, and when to run them,
-                under electricity-grid constraints. Evaluated on economic performance, grid feasibility, and compute
+                under <strong>electricity-grid constraints</strong>. Evaluated on economic performance, grid feasibility, and compute
                 cost against conventional optimization.
               </p>
             </div>
@@ -168,8 +180,8 @@
             <div class="entry-main">
               <h3>Explainable AI in finance</h3>
               <p>
-                An early-stage project on explainable AI for financial decision support.
-                My main work was fine-tuning a language model with QLoRA; the project wasn't taken to completion.
+                An early-stage project on explainable AI for <strong>financial decision support</strong>.
+                My main work was fine-tuning a language model with <strong>QLoRA</strong>; the project wasn't taken to completion.
               </p>
             </div>
           </article>
@@ -177,12 +189,12 @@
           <article class="entry reveal">
             <div class="entry-side">
               <span>empirical economics</span>
-              <a href="https://github.com/MahMosTash/Iran-Inflation-School-Attendance" target="_blank" rel="noopener">code</a>
+              <a href="https://github.com/MahMosTash/Iran-Inflation-School-Attendance" target="_blank" rel="noopener">code ↗</a>
             </div>
             <div class="entry-main">
               <h3>Inflation and school non-attendance in Iran</h3>
               <p>
-                190,933 child records linked to 3,348 province-month inflation observations.
+                <strong>190,933 child records</strong> linked to <strong>3,348 province-month</strong> inflation observations.
                 Survey-weighted fixed effects, clustered errors, robustness checks. Fully reproducible.
               </p>
             </div>
@@ -208,10 +220,10 @@
             <div class="entry-main">
               <h3>Associate Data Product Manager</h3>
               <ul class="bullets">
-                <li>Worked on contextual bandits to personalize driver incentives and goal-setting.</li>
-                <li>Found signs that aggressive incentives drive burnout, and defined metrics for incentive dependency, earnings predictability, and post-incentive activity.</li>
-                <li>Built Driver Voice, a pipeline that merges Telegram, call-center, ticket, and bug-report data, classifies recurring issues, and routes them to the right team.</li>
-                <li>Traced notification flows in SQL to separate automated from manual incentive messages.</li>
+                <li><strong>Personalized incentives:</strong> contextual bandits for driver incentives and goal-setting.</li>
+                <li><strong>Incentive fatigue:</strong> showed aggressive incentives can drive burnout; defined metrics for dependency, earnings predictability, and post-incentive activity.</li>
+                <li><strong>Driver Voice:</strong> merges Telegram, call-center, ticket, and bug-report data; classifies recurring issues and routes them to the right team.</li>
+                <li><strong>Notification forensics:</strong> traced notification flows in SQL to separate automated from manual incentive messages.</li>
               </ul>
             </div>
           </article>
@@ -242,16 +254,19 @@
             <blockquote class="story">
               <p>
                 Students told us the practical homework wasn't interesting. So I designed a new project from scratch,
-                where they compete against each other.
+                where they <strong>compete against each other</strong>.
               </p>
             </blockquote>
             <p>
               Curiosity is what keeps me learning, so I design for it: real data, real stakes, a leaderboard,
               and problems where the wrong intuition fails loudly.
             </p>
-            <p>
-              Since 2025 I've been a TA 14 times across six courses at Sharif and Amirkabir, four of them as head TA.
-            </p>
+            <div class="stats">
+              <div class="stat"><b>14</b><span>TA roles</span></div>
+              <div class="stat"><b>4</b><span>as head TA</span></div>
+              <div class="stat"><b>6</b><span>courses</span></div>
+              <div class="stat"><b>2</b><span>universities</span></div>
+            </div>
           </div>
 
           <div class="heat-wrap reveal">
@@ -284,22 +299,20 @@
           </div>
         </div>
 
-        <h3 class="sub-h reveal">Designed for my students</h3>
-        <div class="entries reveal">
-          <article class="entry">
-            <div class="entry-side"><span>Fall 2026</span><span class="faint">Machine Learning (Practical)</span></div>
-            <div class="entry-main">
+        <div class="designed reveal">
+          <p class="label">Designed for my students</p>
+          <div class="designed-grid">
+            <article>
+              <p class="d-meta">Machine Learning (Practical) · Fall 2026</p>
               <h3>Divar price prediction</h3>
               <p>Predict real apartment prices from Divar listings. Train on 2024, test on today, so inflation matters. One self-built network or tree, no boosting. Ranked on a hidden leaderboard.</p>
-            </div>
-          </article>
-          <article class="entry">
-            <div class="entry-side"><span>Fall 2026, in design</span><span class="faint">Probability &amp; Statistics</span></div>
-            <div class="entry-main">
+            </article>
+            <article>
+              <p class="d-meta">Probability &amp; Statistics · Fall 2026 · in design</p>
               <h3>The probabilistic casino</h3>
-              <p>120 agents and hidden payoff distributions. Students estimate them from history, then build an agent that also predicts the crowd. It inspired the <a href="#playground" data-tab="crowd">read-the-crowd game</a>.</p>
-            </div>
-          </article>
+              <p>120 agents, hidden payoff distributions. Estimate them from history, then build an agent that also predicts the crowd. It inspired <a href="#playground" data-tab="crowd">read the crowd</a>.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -309,37 +322,41 @@
       <div class="container">
         <header class="section-head reveal">
           <h2>Service</h2>
+          <p class="sub">Most of what makes a department good happens outside the classroom. I've spent a lot of my time there.</p>
         </header>
 
-        <div class="entries">
-          <article class="entry reveal">
-            <div class="entry-side"><span>2024 – 2026</span><a class="faint" href="https://ssc.ce.sharif.ir" target="_blank" rel="noopener">ssc.ce.sharif.ir</a></div>
-            <div class="entry-main">
-              <h3>Central Council, Students' Scientific Chapter</h3>
-              <p>Elected in a vote open to every CE student, from first-year undergrads to PhDs, and served two years.
-                The council organizes the department's events and all of its extracurricular scientific activities. I took part in as many as I could.</p>
-            </div>
+        <div class="svc-grid">
+          <article class="svc-card reveal">
+            <p class="svc-when">2024 – 2026 · <a href="https://ssc.ce.sharif.ir" target="_blank" rel="noopener">ssc.ce.sharif.ir ↗</a></p>
+            <h3>Central Council, Students' Scientific Chapter</h3>
+            <p>The council organizes the department's events and all of its extracurricular scientific activities. I was active in as many of them as I could.</p>
+            <ul class="svc-facts">
+              <li><b>Elected</b><span>by all CE students</span></li>
+              <li><b>BSc → PhD</b><span>every level votes</span></li>
+              <li><b>2 years</b><span>on the council</span></li>
+            </ul>
           </article>
-          <article class="entry reveal">
-            <div class="entry-side"><span>2024 – now</span><a class="faint" href="https://wss-sharif.com" target="_blank" rel="noopener">wss-sharif.com</a></div>
-            <div class="entry-main">
-              <h3>Winter Seminar Series</h3>
-              <p>Sharif CE's annual two-day event on advanced topics in computer science, run by about 70 student volunteers.
-                I started on the executive staff in 2024, led the executive team in 2025, was Vice President in 2026, and I'm on the scientific team for 2027.</p>
-            </div>
-          </article>
-          <article class="entry reveal">
-            <div class="entry-side"><span>2024</span></div>
-            <div class="entry-main">
-              <h3>Rayan AI Contest</h3>
-              <p>Head of Executive and Human Resources for an international AI competition hosted by Sharif CE.</p>
-            </div>
+
+          <article class="svc-card reveal">
+            <p class="svc-when">2024 – now · <a href="https://wss-sharif.com" target="_blank" rel="noopener">wss-sharif.com ↗</a></p>
+            <h3>Winter Seminar Series</h3>
+            <p>Sharif CE's annual two-day event on advanced topics in computer science: research talks, round tables, and poster sessions, run by about 70 student volunteers.</p>
+            <ol class="svc-steps">
+              <li><span>2024</span>Executive staff</li>
+              <li><span>2025</span>Executive Head</li>
+              <li class="peak"><span>2026</span>Vice President</li>
+              <li><span>2027</span>Scientific staff</li>
+            </ol>
           </article>
         </div>
-        <p class="more reveal">
-          Also: Deputy Head of Media for the ICPC Asia Regional, Tehran site (2023); Head of Marketing for Introduction to CE Major (2024);
-          scientific staff for ASM Masters (2026); chief organizer of the department's New Year celebration.
-        </p>
+
+        <ul class="svc-list reveal">
+          <li><span>2024</span><div><b>Rayan AI Contest</b> · Head of Executive &amp; Human Resources for an international AI competition hosted by Sharif CE</div></li>
+          <li><span>2026</span><div><b>ASM Masters</b> · Scientific staff</div></li>
+          <li><span>2024</span><div><b>Introduction to CE Major</b> · Head of Marketing</div></li>
+          <li><span>2023</span><div><b>ICPC Asia Regional, Tehran site</b> · Deputy Head of Media</div></li>
+          <li><span></span><div><b>New Year Celebration</b> · Chief Organizer</div></li>
+        </ul>
       </div>
     </section>
 
@@ -348,28 +365,62 @@
       <div class="container">
         <header class="section-head reveal">
           <h2>Projects</h2>
-          <p class="sub">If something is repetitive or bugging me, it becomes a project. Right now I'm designing the next version of Driver Voice, which traces each recurring driver issue to its cause and suggests fixes.</p>
+          <p class="sub">If something is repetitive or bugging me, it becomes a project.</p>
         </header>
 
-        <ul class="plist">
-          <li class="reveal"><h3><a href="https://github.com/MahMosTash/FinFormer-Custom-Transformer-for-Financial-Sentiment" target="_blank" rel="noopener">FinFormer</a></h3>
-            <p>Transformer built from scratch, plus fine-tuned FinBERT, for sentiment on earnings calls and financial news. <span class="faint">PyTorch, Hugging Face</span></p></li>
-          <li class="reveal"><h3>FPL decision model</h3>
-            <p>Picks my Fantasy Premier League squad, transfers, lineup, and captain from fixtures, form, and head-to-head history. <span class="faint">Python, private</span></p></li>
-          <li class="reveal"><h3>Personal operations assistant</h3>
-            <p>Always-on Telegram assistant over my email and calendars: briefings, reminders, conflict detection, confirmation-gated events. <span class="faint">LLMs, Docker, private</span></p></li>
-          <li class="reveal"><h3><a href="https://github.com/MahMosTash/CA-Project-GPU-Monitor" target="_blank" rel="noopener">GPU resource monitor</a></h3>
-            <p>Monitoring and alerts for shared GPUs, with API, web, desktop, and terminal clients. <span class="faint">FastAPI, Prometheus, Grafana</span></p></li>
-          <li class="reveal"><h3><a href="https://github.com/MahMosTash/MIPS-CPU-Design" target="_blank" rel="noopener">MIPS CPU</a></h3>
-            <p>Single-cycle and pipelined MIPS CPUs with forwarding and hazard handling. <span class="faint">Verilog, Logisim</span></p></li>
-          <li class="reveal"><h3><a href="https://github.com/MahMosTash/BP_Project" target="_blank" rel="noopener">Neo Git</a></h3>
-            <p>Git-like version control in C: init, tracking, commits, branches. <span class="faint">C, Linux</span></p></li>
-        </ul>
-        <p class="more reveal">
-          Also: <a href="https://github.com/MahMosTash/CSL_031" target="_blank" rel="noopener">real-time area measurement with OpenCV</a>,
-          <a href="https://github.com/MahMosTash/JusticeFlow" target="_blank" rel="noopener">JusticeFlow</a> (Django and React),
-          a <a href="https://github.com/advanced-programming-sut-2024/advanced-programming-project-group-40" target="_blank" rel="noopener">Gwent-inspired card game</a> built with two teammates,
-          and <a href="https://github.com/mahmostash" target="_blank" rel="noopener">everything else on GitHub</a>.
+        <div class="workbench reveal">
+          <p class="label">On the workbench</p>
+          <ul>
+            <li>
+              <span class="pill pill-live mono">designing</span>
+              <div><strong>Driver Voice, layer 2.</strong> From detecting recurring driver issues to tracing their cause and suggesting fixes.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="projects">
+          <a class="project reveal" href="https://github.com/MahMosTash/FinFormer-Custom-Transformer-for-Financial-Sentiment" target="_blank" rel="noopener">
+            <span class="p-kind">nlp · finance</span>
+            <h3>FinFormer <span class="arrow">↗</span></h3>
+            <p>Transformer built from scratch, plus fine-tuned FinBERT, for sentiment on earnings calls and financial news.</p>
+            <span class="p-tech">PyTorch · HF Transformers</span>
+          </a>
+          <div class="project reveal">
+            <span class="p-kind">decision model · private</span>
+            <h3>FPL Decision Model</h3>
+            <p>Picks my Fantasy Premier League squad, transfers, lineup, and captain from fixtures, form, and head-to-head history.</p>
+            <span class="p-tech">Python · optimization</span>
+          </div>
+          <div class="project reveal">
+            <span class="p-kind">agent · private</span>
+            <h3>Personal Operations Assistant</h3>
+            <p>Always-on Telegram assistant over my email and calendars: briefings, reminders, conflict detection, confirmation-gated events.</p>
+            <span class="p-tech">LLMs · Docker · Telegram</span>
+          </div>
+          <a class="project reveal" href="https://github.com/MahMosTash/CA-Project-GPU-Monitor" target="_blank" rel="noopener">
+            <span class="p-kind">infra</span>
+            <h3>GPU Resource Monitor <span class="arrow">↗</span></h3>
+            <p>Monitoring and alerts for shared GPUs, with API, web, desktop, and terminal clients.</p>
+            <span class="p-tech">FastAPI · Prometheus · Grafana</span>
+          </a>
+          <a class="project reveal" href="https://github.com/MahMosTash/MIPS-CPU-Design" target="_blank" rel="noopener">
+            <span class="p-kind">hardware</span>
+            <h3>MIPS CPU <span class="arrow">↗</span></h3>
+            <p>Single-cycle and pipelined MIPS CPUs with forwarding and hazard handling.</p>
+            <span class="p-tech">Verilog · Logisim</span>
+          </a>
+          <a class="project reveal" href="https://github.com/MahMosTash/BP_Project" target="_blank" rel="noopener">
+            <span class="p-kind">systems</span>
+            <h3>Neo Git <span class="arrow">↗</span></h3>
+            <p>Git-like version control in C: init, tracking, commits, branches.</p>
+            <span class="p-tech">C · Linux</span>
+          </a>
+        </div>
+        <p class="more mono reveal">
+          also: <a href="https://github.com/MahMosTash/CSL_031" target="_blank" rel="noopener">real-time area measurement with OpenCV</a> ·
+          <a href="https://github.com/MahMosTash/JusticeFlow" target="_blank" rel="noopener">JusticeFlow</a> (Django + React) ·
+          <a href="https://github.com/advanced-programming-sut-2024/advanced-programming-project-group-40" target="_blank" rel="noopener">Gwent-inspired card game</a> (team project) ·
+          <a href="https://github.com/mahmostash" target="_blank" rel="noopener">everything on GitHub ↗</a>
         </p>
       </div>
     </section>
@@ -466,21 +517,21 @@
         <div class="about-grid">
           <div class="prose reveal">
             <p>
-              Trading since high school got me into economics. Over time my question moved from the market
-              to the people in it: why they decide the way they do.
+              <strong>Trading since high school</strong> got me into economics. Over time my question moved from the market
+              to the <strong>people in it</strong>: why they decide the way they do.
             </p>
             <p>
               I don't learn things to pass exams; I learn them to use them. So I keep one foot in research,
               one in industry, and both in the classroom.
             </p>
             <p>
-              Off the clock: rock and metal, football (hence the FPL model), and slowly, German.
+              Off the clock: <strong>rock and metal</strong>, football (hence the FPL model), and slowly, German.
             </p>
           </div>
           <div class="facts reveal">
             <div>
               <p class="label">Education</p>
-              <p>B.Sc. Computer Engineering, Sharif University of Technology <span class="faint">· 2023–</span><br>
+              <p><strong>B.Sc. Computer Engineering</strong>, Sharif University of Technology <span class="faint">· 2023–</span><br>
                  Minor in Economics <span class="faint">· GPA 18.71/20, major 19.36/20</span></p>
             </div>
             <div>
@@ -498,7 +549,7 @@
         <div class="wordle reveal" id="wordle" hidden>
           <div class="wordle-head">
             <h3>My Wordle</h3>
-            <a class="btn btn-small" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">Play Wordle on The New York Times</a>
+            <a class="btn btn-small" href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">Play Wordle on The New York Times ↗</a>
           </div>
           <div class="wordle-body">
             <figure class="wordle-today">
@@ -523,16 +574,16 @@
     <!-- ───────── CONTACT ───────── -->
     <section class="section contact-section" id="contact">
       <div class="container contact reveal">
-        <h2>Contact</h2>
+        <h2>Let's talk.</h2>
         <p>
-          Applying to Master's programs and research internships.
+          Applying to <strong>Master's programs</strong> and <strong>research internships</strong>.
           If you work on incentives, human–AI decisions, or ML for economics, I'd love to talk.
         </p>
         <div class="contact-links">
-          <button class="btn btn-primary" id="copy-email" data-email="MahdyarMostasharH@gmail.com">Copy email</button>
-          <a class="btn" href="https://github.com/mahmostash" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/mahdyar-mostashar-279aaa287" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="assets/Mahdyar_Mostashar_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <button class="btn btn-primary" id="copy-email" data-email="MahdyarMostasharH@gmail.com">✉ Copy email</button>
+          <a class="btn" href="https://github.com/mahmostash" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/mahdyar-mostashar-279aaa287" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="assets/Mahdyar_Mostashar_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
         </div>
       </div>
     </section>
@@ -561,11 +612,11 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="assets/js/main.js?v=202611201519" defer></script>
-  <script src="assets/js/market.js?v=202611201519" defer></script>
-  <script src="assets/js/bandit.js?v=202611201519" defer></script>
-  <script src="assets/js/crowd.js?v=202611201519" defer></script>
-  <script src="assets/js/terminal.js?v=202611201519" defer></script>
-  <script src="assets/js/wordle.js?v=202611201519" defer></script>
+  <script src="assets/js/main.js?v=202611201515" defer></script>
+  <script src="assets/js/market.js?v=202611201515" defer></script>
+  <script src="assets/js/bandit.js?v=202611201515" defer></script>
+  <script src="assets/js/crowd.js?v=202611201515" defer></script>
+  <script src="assets/js/terminal.js?v=202611201515" defer></script>
+  <script src="assets/js/wordle.js?v=202611201515" defer></script>
 </body>
 </html>
