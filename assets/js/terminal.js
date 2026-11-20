@@ -13,7 +13,7 @@
     cv: 'assets/Mahdyar_Mostashar_CV.pdf',
     email: 'mailto:MahdyarMostasharH@gmail.com',
   };
-  const SECTIONS = ['questions', 'research', 'work', 'teaching', 'projects', 'playground', 'about', 'contact'];
+  const SECTIONS = ['questions', 'research', 'work', 'teaching', 'service', 'projects', 'playground', 'about', 'contact'];
 
   const FILES = {
     'about.txt': `Final-year CE @ Sharif University of Technology, minor in Economics.
